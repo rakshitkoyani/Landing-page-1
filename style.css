@@ -2,12 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'poppins', sans-serif; */
+  font-family: 'poppins', sans-serif;
+
 }
 
 .container {
-  margin: 0 5%;
+  padding: 20px 5%;
+}
 
+/* fonts */
+li,
+.hero-heading,
+.button-join,
+.button-email {
+  font-family: 'orbitron', sans-serif;
 }
 
 .logo {
@@ -16,7 +24,6 @@
 }
 
 nav {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -26,7 +33,6 @@ nav {
 .list {
   display: flex;
   padding-right: 150px;
-  font-family: 'Orbitron', sans-serif;
 
 }
 
@@ -35,40 +41,41 @@ nav {
   font-weight: 500;
   font-size: 20px;
   list-style-type: none;
+}
 
+nav div ul li:first-child {
+  font-weight: 900;
+}
+
+/* underline first child  */
+nav div ul li:first-child::after {
+  content: "";
+  height: 2px;
+  width: 50px;
+  background-color: #000;
+  position: absolute;
+  top: 12%;
+  left: 27%;
 }
 
 .list-item:hover {
-  font-weight: 900;
   cursor: pointer;
-  border-bottom: 2px solid #000000;
 }
 
-.button-group {
-  position: relative;
-  right: 0;
+nav .button-group {
   display: flex;
   flex-direction: row;
+  margin-right: 50px;
 }
 
-.button-group .search-icon {
-  position: relative;
-  height: 30px;
-  top: 5px;
-  right: 10px;
-  padding: auto 5px;
-
-}
-
-.button-group .nav-button {
-  font-size: 20px;
-  font-family: 'Poppins';
+.nav-button {
+  font-size: 1.3em;
   padding: 2px 40px;
   border-radius: 10px;
   border: 3px solid black;
   background-color: #ffffff;
   color: #615f5f;
-  cursor: pointer;
+  margin-left: 15%;
 }
 
 
@@ -93,16 +100,14 @@ h1.hero-heading {
   position: relative;
   margin-bottom: 40px;
   font-size: 50px;
-  font-family: "orbitron";
   margin-top: 50px;
 }
 
 .hero-description {
   position: relative;
-  font-family: sans-serif;
   text-align: center;
   font-size: medium;
-  padding: 0 110px;
+  margin: 0 110px;
   line-height: 1.3;
   color: #4a4848;
 }
@@ -114,7 +119,6 @@ h1.hero-heading {
   padding: 3px 20px;
   border-radius: 7px;
   background-color: #fff;
-  font-family: Orbitron;
 }
 
 .button-join {
@@ -127,16 +131,21 @@ h1.hero-heading {
   background-color: #000000;
 }
 
+button {
+  cursor: pointer;
+
+}
+
 .contact-heading {
   position: relative;
   top: 160px;
-  font-family: sans-serif;
   color: #615f5f;
+  font-weight: 500;
 }
 
 .icons {
   position: relative;
-  top: 180px;
+  top: 170px;
 }
 
 .icons img {
@@ -144,7 +153,19 @@ h1.hero-heading {
   margin: auto 7px;
 }
 
+.icons img:hover,
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
 
+}
+
+.globe-pattern:hover,
+.start-pattern:hover {
+  cursor: pointer;
+  opacity: 0.5;
+
+}
 
 span .square-pattern {
   position: absolute;
