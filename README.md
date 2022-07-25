@@ -11,7 +11,7 @@ Hope you like my project !!
 - CSS3 - Cascading Spread Sheet
 
 ## Demo
-![output](https://raw.githubusercontent.com/rakshitkoyani/Landing-page-1/master/final.png)
+![output](https://raw.githubusercontent.com/rakshitkoyani/Landing-page-1/master/Project-1.png)
 
 ## Run Locally
 
